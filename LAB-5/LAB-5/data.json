@@ -1,0 +1,27 @@
+{
+    "education": [
+      {
+        "date": "2012 - 2024",
+        "school": "Qax rayonu, E.Babayev adına 4 nömrəli məktəb",
+        "field": "Azərbaycan Texniki Universiteti - İnformasiya Təhlükəsizliyi"
+      }
+    ],
+    "experience": [
+      {
+        "date": "2025-05-06",
+        "job": "Təcrübəçi, Cyber Security şirkəti",
+        "description": "Web tətbiqlərin təhlükəsizlik testləri aparılır"
+      }
+    ],
+    "skills": [
+      "C proqramlaşdırma dili",
+      "C++ proqramlaşdırma dili",
+      "HTML və CSS",
+      "Web app hacking (fundamental)",
+      "Kali Linux və Windows-da işləmə",
+      "Analitik düşüncə",
+      "Komanda ilə işləmə",
+      "Networking bilikləri"
+    ]
+  }
+  

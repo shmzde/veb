@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Şəmizadə Məhəmməd - CV</title>
+  <link rel="stylesheet" href="LAB-5.css" />
+</head>
+<body>
+  <div class="header">
+    <h1 class="name">Şəmizadə Məhəmməd</h1>
+  </div>
+
+  <div class="section">
+    <h3 class="section-title">HAQQIMDA</h3>
+    <p>
+      Mən Azərbaycan Texniki Universitetində (AZTU) 1-ci kurs tələbəsiyəm. 18 yaşım var və 2024-cü ildə Qax rayonu
+      S. Pişəvari adına tam orta məktəbi bitirmişəm. Öyrənməyə və yeni biliklər kəşf etməyə böyük marağım var. 
+      Xüsusilə, informasiya təhlükəsizliyi, texnologiya və innovasiyalar sahəsində araşdırmalar aparmaq mənim üçün həyəcanvericidir.
+      <br><br>
+      Kitab oxumaq mənim üçün təkcə bir hobbi deyil, həm də dünyagörüşümü genişləndirən, düşüncə tərzimi inkişaf etdirən bir vasitədir. 
+      Fərqli mövzular üzrə oxumağı sevirəm – istər texniki ədəbiyyat, istərsə də fəlsəfə və motivasiya kitabları. 
+      Daim öz üzərimdə işləməyə və biliklərimi artırmağa can atıram.
+      <br><br>
+      Bundan əlavə, yenilikləri araşdırmaq, informasiya təhlükəsizliyi və texnologiya sahəsində dərin biliklərə yiyələnmək əsas məqsədlərimdəndir. 
+      Gələcəkdə bu sahədə ixtisaslaşaraq peşəkar səviyyəyə çatmaq və əldə etdiyim bilikləri real layihələrdə tətbiq etmək istəyirəm. 
+      Özümü inkişaf etdirmək və daim öyrənmək mənim üçün həyat tərzidir.
+    </p>
+  </div>
+
+  <div class="section">
+    <h3 class="section-title">TƏHSİL</h3>
+    <!-- Statik Təhsil Məlumatı -->
+    <div class="education-item">
+      <div class="date">2012 - 2024 | Bakı şəhəri, S.Pişəvari adına tam orta məktəbi bitirmişəm</div>
+      <h4>Azərbaycan Texniki Universiteti</h4>
+      <p>İnformasiya Təhlükəsizliyi</p>
+    </div>
+    <!-- Dinamik Təhsil Girişi -->
+    <div id="education"></div>
+    <button onclick="addEducation()">Yeni Təhsil Əlavə Et</button>
+  </div>
+
+  <div class="section">
+    <h3 class="section-title">İŞ TƏCRÜBƏSİ</h3>
+    <div id="experience"></div>
+    <button onclick="addExperience()">Yeni Təcrübə Əlavə Et</button>
+  </div>
+
+  <div class="section">
+    <h3 class="section-title">BACARIQLAR</h3>
+    <!-- Statik Bacarıqlar -->
+    <ul class="skills-list">
+      <li>C proqramlaşdırma dili</li>
+      <li>C++ proqramlaşdırma dili</li>
+      <li>HTML və CSS</li>
+      <li>Web app hacking (fundamental)</li>
+      <li>Kali Linux və Windows kimi əməliyyat sistemlərində işləmə</li>
+      <li>Analitik düşüncə</li>
+      <li>Komanda ilə işləmə</li>
+      <li>Networking bilikləri</li>
+    </ul>
+    <!-- Dinamik Bacarıqlar -->
+    <ul id="skills"></ul>
+    <button onclick="addSkill()">Yeni Bacarıq Əlavə Et</button>
+  </div>
+
+  <div class="section">
+    <h3 class="section-title">ƏLAVƏ MƏLUMAT</h3>
+    <form id="infoForm">
+      <label>Ad: <input type="text" id="name" required></label><br />
+      <label>E-poçt: <input type="email" id="email" required></label><br />
+      <label>Tarix: <input type="date" id="date" required></label><br />
+      <label>Digər məlumatlar: <textarea id="description" required></textarea></label><br />
+      <button type="submit">Yadda Saxla</button>
+      <p id="error" style="color: red;"></p>
+    </form>
+    <div id="savedData"></div>
+  </div>
+
+  <button onclick="resetAll()">Sıfırla</button>
+
+  <script src="LAB-5.js"></script>
+</body>
+</html>
